@@ -1,0 +1,477 @@
+@import 'variables';
+
+@font-face {
+    font-family: "frutiger-lt-light";
+    font-style: normal;
+    font-weight: normal;
+    src: url(../fonts/FrutigerLTforBNS-Light.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "frutiger-lt-bold";
+    font-style: normal;
+    font-weight: normal;
+    src: url(../fonts/FrutigerLTforBNS-Bold.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "frutiger-lt-roman";
+    font-style: normal;
+    font-weight: normal;
+    src: url(../fonts/FrutigerLTforBNS-Roman.woff2) format("woff2");
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.w-90 {
+    width: 93%;
+}
+
+.position-relative{
+    position: relative;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.d-none {
+    display: none;
+}
+
+.margin-auto {
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.margin-bottom-12 {
+    margin-bottom: 12px; }
+
+.margin-bottom-18 {
+    margin-bottom: 18px;
+}
+
+.margin-bottom-24 {
+    margin-bottom: 24px;
+}
+
+.margin-bottom-36 {
+    margin-bottom: 36px;
+}
+
+.margin-top-24 {
+    margin-top: 24px;
+}
+
+.margin-top-10 {
+    margin-top: 10px;
+}
+
+.margin-right-5 {
+    margin-right: 5px;
+}
+
+.margin-left-5 {
+    margin-left: 5px;
+}
+
+.margin-left-0 {
+    margin-left: 0 !important;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.padding-left-41 {
+    padding-left: 41px;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+sup{
+    vertical-align: text-bottom;
+}
+
+.continue-button {
+    font-family: $font-bold;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px !important;
+    line-height: 16px;
+    text-align: right;
+    color: #ED0722;
+
+    .ButtonCore__icon {
+        min-width: 48px !important;
+        height: 48px !important;
+        width: 48px !important;
+    }
+}
+
+
+.loader-size {
+    width: 72px;
+    height: 72px;
+}
+
+label {
+    font-family: $font-light;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #333333;
+    margin-bottom: 0;
+}
+
+.InputContainer__input {
+
+    input:focus {
+        border-bottom: 0.2rem solid #7849B8;
+    }
+
+    input.TextField__input--readOnly:focus {
+        border-bottom: none;
+    }
+
+    label {
+        font-family: $font-bold;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #333333;
+        margin-bottom: 0;
+    }
+
+    label.Checkbox__label {
+        font-family: $font-light;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    input {
+        font-family: $font-light;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 20px;
+        color: #333333;
+        height: 43px;
+        padding-bottom: 10px;
+
+        ::placeholder {
+            color: #929292;
+        }
+
+        ::-webkit-input-placeholder {
+            color: #929292;
+        }
+    }
+}
+
+.Checkbox__input:checked+.Checkbox__span {
+    background-color: #7849B8 !important;
+    border-color: #7849B8 !important;
+}
+
+.RadioButton__input:checked+span,
+.RadioButton__input:checked+span span {
+    background-color: #7849B8 !important;
+    border-color: #7849B8 !important;
+}
+
+.main-content {
+
+    p,
+    ul li {
+        font-family: $font-light;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: -0.153846px;
+        color: #333333;
+    }
+
+    .font-18 {
+        font-size: 18px;
+        color: #000;
+    }
+
+    a {
+        font-family: $font-bold;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.222222px;
+        color: #8230DF;
+    }
+
+    .AccordionItem {
+        border: none;
+
+        .AccordionTitle__title {
+            font-family: 'Scotia';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 18px;
+            color: #7849B8;
+        }
+
+        svg {
+            right: inherit;
+            left: 27%;
+            height: 1.3rem;
+            stroke-width: 1.5;
+            width: 1.3rem;
+            stroke: #333;
+            top: 2.5rem;
+        }
+    }
+
+    .Table {
+        text-align: left;
+        border-bottom: 1px solid #d6d6d6;
+
+        .TableHead {
+            padding-top: 0;
+            margin-top: 2.5rem;
+            border-top: 1px solid #D6D6D6;
+            border-bottom: 1px solid #D6D6D6;
+
+            tr {
+                border: none;
+                align-items: start;
+
+                th {
+                    p {
+                        font-size: 14px;
+                        color: #757575;
+                    }
+                }
+            }
+        }
+
+        tr:not(:last-child) {
+            border: none;
+        }
+
+        tr:nth-child(odd) {
+            background: none;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgba(226, 232, 238, 0.2);
+        }
+
+        th,
+        td {
+            flex-grow: 1;
+        }
+
+        .TableBody p {
+            font-size: 14px;
+        }
+    }
+}
+
+.request-box {
+    border: 1px dashed #E2E8EE;
+    border-radius: 4px;
+    padding: 18px;
+    overflow: hidden;
+    margin-bottom: 77px;
+
+    p {
+        font-family: $font-light;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 22px;
+        color: #333333;
+        float: right;
+        width: 93%;
+
+        strong {
+            font-weight: bold;
+        }
+    }
+
+    .info-icon {
+        background: url(../images/info.svg) no-repeat;
+        height: 24px;
+        width: 24px;
+        float: left;
+    }
+
+}
+
+.cofirmation,
+.contact {
+
+    p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .what-next {
+        background: #FFFFFF;
+        border: 1px solid #E2E8EE;
+        box-shadow: 0px 2px 10px rgba(0, 40, 80, 0.07);
+        border-radius: 4px;
+        padding: 27px;
+        margin-bottom: 60px;
+
+        .headtext {
+            font-family: $font-bold;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 32px;
+            letter-spacing: -0.25px;
+            color: #000000;
+        }
+
+        ol {
+            margin-left: 16px;
+        }
+    }
+
+    .thank-you {
+        margin-bottom: 90px;
+        text-align: center;
+
+        p {
+            font-family: $font-light;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            letter-spacing: -0.25px;
+            color: #333333;
+            margin-bottom: 24px;
+        }
+
+        a {
+            // background: #ED0722;
+            border-radius: 8px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 16px;
+            text-align: center;
+            // color: #FFFFFF;
+            padding: 19px 48px;
+            text-decoration: none;
+            display: inline-block;
+            font-family: $font-light;
+            background: #fff;
+            border: 1px solid #ED0722;
+            color: #ED0722;
+        }
+    }
+}
+
+
+.error {
+    .go-to {
+        font-family: $font-bold;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 48px;
+        float: right;
+        color: #ED0722;
+        background: url(../images/button-arrow-right-circle.svg) no-repeat right center;
+        height: 48px;
+        padding-right: 60px;
+        // margin-right: 1px;
+        text-decoration: none;
+        margin: 50px 0;
+    }
+    .main-content p{
+        padding: 0 20px;
+    }
+}
+
+a.primary-btn {
+    background: #ED0722;
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 19px 48px;
+    text-decoration: none;
+    display: block;
+}
+
+.tnc .faq-link{
+    margin: 15px 30px 30px;
+    display: inline-block;
+}
+
+hr{
+    border: none;
+    border-top: 1px solid #E2E8EE;
+}
+
+@media screen and (max-width: 1020px) {
+    .margin-bottom-sm-36 {
+        margin-bottom: 36px;
+    }
+    .margin-bottom-sm-24 {
+        margin-bottom: 24px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .request-box p {
+        width: 84%;
+    }
+    .error {
+        .main-content p{
+            padding: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 361px) {
+    .cofirmation .scotia-heli-email{
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 1272px) {
+    .Grid__container {
+        width: 100% !important;
+    }
+}
